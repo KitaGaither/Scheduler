@@ -14,39 +14,44 @@ class CardAnimation extends Component {
             margin: '0',
           }}
         />
-        <div className='page-body'>
-          <div className='card-holder'>
-            <Card className='card-anime'>
-              <CardImg
-                className='card-img-anime'
-                variant='top'
-                src='../assets/images/ladycalendar.jpg'
-              />
-            </Card>
 
-            <Card className='card-anime'>
-              <CardImg
-                className='card-img-anime'
-                variant='top'
-                src='../assets/images/tableclock.jpg'
-              />
-            </Card>
+        <div className='container'>
+          <div className='row'>
+            <div className='page-body'>
+              <div className='card-holder'>
+                <Card className='card-anime'>
+                  <CardImg
+                    className='card-img-anime'
+                    variant='top'
+                    src='../assets/images/ladycalendar.jpg'
+                  />
+                </Card>
 
-            <Card className='card-anime'>
-              <CardImg
-                className='card-img-anime'
-                variant='top'
-                src='../assets/images/browncalendar.jpg'
-              />
-            </Card>
+                <Card className='card-anime'>
+                  <CardImg
+                    className='card-img-anime'
+                    variant='top'
+                    src='../assets/images/tableclock.jpg'
+                  />
+                </Card>
 
-            <Card className='card-anime'>
-              <CardImg
-                className='card-img-anime'
-                variant='top'
-                src='../assets/images/piccollage.jpg'
-              />
-            </Card>
+                <Card className='card-anime'>
+                  <CardImg
+                    className='card-img-anime'
+                    variant='top'
+                    src='../assets/images/browncalendar.jpg'
+                  />
+                </Card>
+
+                <Card className='card-anime'>
+                  <CardImg
+                    className='card-img-anime'
+                    variant='top'
+                    src='../assets/images/piccollage.jpg'
+                  />
+                </Card>
+              </div>
+            </div>
           </div>
         </div>
       </React.Fragment>

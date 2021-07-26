@@ -2,9 +2,9 @@
 .card-holder {
   position: absolute;
   height: 300px;
-  width: 600px;
+  width: 450px;
   top: 60px;
-  left: calc(50% - 300px);
+  left: calc(50% - 225px);
   display: flex;
   padding-top: 300px;
 }
@@ -12,7 +12,7 @@
 .card-anime {
   display: flex;
   height: 280px;
-  width: 200px;
+  width: 150px;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
   /*   margin-left: -50px; */
@@ -25,16 +25,16 @@
   text-align: center;
 }
 
-.card:not(:first-child) {
+.card-anime:not(:first-child) {
   margin-left: -50px;
 }
 
-.card:hover {
+.card-anime:hover {
   transform: translateY(-20px);
   transition: 0.4s ease-out;
 }
 
-.card:hover ~ .card {
+.card-anime:hover ~ .card-anime {
   position: relative;
   left: 50px;
   transition: 0.4s ease-in-out;
@@ -47,7 +47,7 @@
   transition: 0.6s ease-out;
 }
 
-.card:hover .stroke {
+.card-anime:hover .stroke {
   stroke-dashoffset: 100;
   transition: 0.6s ease-in-out;
 }
@@ -57,9 +57,6 @@
   width: 200px;
 }
 
-.cardAnimationDiv {
-  display: flex;
-}
 /* CardAnimation CSS Above **********************************************************************************************************************************************************************/
 
 /* animatedItems CSS Below **********************************************************************************************************************************************************************/
@@ -87,4 +84,27 @@ h1 {
 .p-text {
   color: #089ee7;
   text-align: center;
+}
+/* Media query Below **********************************************************************************************************************************************************************/
+
+@media screen and (max-width: 650px) {
+  /* Apply some styles */
+  .card-anime,
+  .card-anime:hover,
+  .card-anime:not(:first-child),
+  .card-anime:hover ~ .card-anime {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -o-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+    display: inline-block;
+    position: static;
+    margin-left: 0;
+  }
 }
