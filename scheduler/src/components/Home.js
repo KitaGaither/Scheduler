@@ -7,6 +7,7 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
+ 
         <div>
           <img
             src={peoplePlanning}
@@ -14,6 +15,8 @@ class Home extends Component {
             className='home-img img-fluid max-width: 1000px height: auto'
           />
         </div>
+
+        
         <CardAnimationComponent />
         <AnimatingItems />
       </React.Fragment>

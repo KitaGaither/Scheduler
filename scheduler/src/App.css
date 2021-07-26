@@ -9,6 +9,11 @@
   padding-top: 300px;
 }
 
+.hero-img {
+  width: 800px;
+  height:auto;
+}
+
 .card-anime {
   display: flex;
   height: 280px;
